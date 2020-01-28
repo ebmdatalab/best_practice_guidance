@@ -33,7 +33,7 @@ Open Analytics Manifesto.
 
 - Notebooks are primarily to tell a story. They should be well documented with clear divisions between blocks of code. There should be clear accompanying text that tells you what the code is doing. 
 
-- Consider keeping the code separate, imported by the notebook. At a minimum, a single file `custom_functions.py` which is imported once and contains all the necessary functions. (#1)
+- Consider keeping the code separate, imported by the notebook. At a minimum, a single file `custom_functions.py` which is imported once and contains all the necessary functions. ([#1](https://github.com/ebmdatalab/best_practice_guidance/issues/1))
 
 - The author should not assume that the reader or user of the code will retain a large amount of prerequisite knowledge or facts in their head at once. Document any information that is relevant and necessary to understand the notebooks (Wilson 2014). Record all the processes relevant for processing the data (Wilson 2017). For example:
 
