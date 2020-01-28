@@ -146,7 +146,7 @@ Additionally you will likely have to use the os module to navigate using the app
 - The readme for a project should contain enough information that someone could use it to get your code running within a short time frame
 
 
-###Automate tasks with code where possible
+### Automate tasks with code where possible
 **Creating libraries:**
 
 - Code that is going to be used time and time again should be refactored and implemented as a library. This should have appropriate documentation including a readme and docstrings.  
@@ -169,7 +169,7 @@ Additionally you will likely have to use the os module to navigate using the app
 docker template, this will come as standard. If this test failed, you will see a red cross next to your commit and you may receive an email (if notifications turned on)
 
 
-##Appendix 1:
+### Appendix 1:
 This is a full-on docstring and takes some time to construct. Pycharm and Spyder will autowrite this structure if you write the function within these IDEs. 
 
 ```python
@@ -210,7 +210,7 @@ def square_it(number):
 
 ```
 
-###Useful References:
+### Useful References:
 **Papers of interest:**
 Both of these papers contain some useful points. A lot is not relevant for us and is not about jupyter notebooks but relates to using raw code files. I have picked out some boxes that are particularly useful. 
 
