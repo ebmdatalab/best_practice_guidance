@@ -51,9 +51,9 @@ Open Analytics Manifesto.
     - STROBE extension for variation with “user need” pre-amble
 
 - Standard environments: 
-  - Use Docker to create containised code. A github template called [custom-docker](https://github.com/ebmdatalab/custom-docker) has been set up here. Follow the instructions in the readme to use this repo template to make your own project repo. 
-  - A requirements.txt is required for all projects. Auto-write this using pip freeze > requirements.txt for accuracy rather than doing manually. 
-  - Document your virtual environment in the readme as a bare minimum. Where appropriate use a script to launch docker (this is set up automatically when using the custom-docker template)
+  - Use Docker to create containised code. A github template called [custom-docker](https://github.com/ebmdatalab/custom-docker) 
+  has been set up here. Follow the instructions in the readme to use this repo template to make your own project repo. 
+  - Document your virtual environment in the readme as a bare minimum. A `requirements.txt` is required for all projects. Where appropriate use a script to launch docker (this is set up automatically when using the custom-docker template)
 
 - Create each repo with a .gitignore
   - Use the .gitignore included with the custom docker repo 
@@ -67,7 +67,7 @@ Open Analytics Manifesto.
 
 ```bash
 ├── lib
-│   └── custom_functions.py  
+│   └── custom_functions.py  # change to appropriate name
 ├── config                    
 │   └── jupyter_notebook_config
 ├── data
@@ -85,7 +85,10 @@ Open Analytics Manifesto.
 └── run_tests.sh
 ```
                
-- Each repository should have a README that explains briefly what the project is, where the data comes from and what has been done with it. There should be some instructions on how to run the code and if using Docker, there should be a Binder button within the readme. A Zenodo DOI should be included when you have the final version of the code ready to publish. 
+- Each repository should have a README that explains briefly what the project is, where the 
+data comes from and what has been done with it. There should be some instructions on 
+how to run the code. 
+A Zenodo DOI should be included when you have the final version of the code ready to publish. 
 
 - Config folders contain specific Docker files to run the code
 
@@ -93,12 +96,13 @@ Open Analytics Manifesto.
 
 - Notebooks folder contains all jupyter notebooks
 
-- If you are importing your functions from a pure python file, named this file custom_functions.py and store these files within the code folder. 
-You will need a blank __init__.py within the code folder import properly into your notebook. 
+- If you are importing some code from your own python file, named these files clearly and store 
+within the code folder. 
+You may need a blank `__init__.py` within the code folder import properly into your notebook. 
 Additionally you will likely have to use the os module to navigate using the appropriate path. 
 [This](https://stackoverflow.com/questions/5137497/find-current-directory-and-files-directory) provides a good overview of how to do this using built in os functions. 
 
-- Requirements should be in the main directory of the project 
+- Your `requirements.txt` should be in the main directory of the project 
 
 **Best practice for writing code:**
 
@@ -108,7 +112,7 @@ Additionally you will likely have to use the os module to navigate using the app
 
   - Functions have docstrings and conform to PEP 257 (see appendix 1)
   
-  - A module docstring (indicated by ``` this is the first sentence of code in a module ```) is used when creating a module. 
+  - A module docstring (indicated by ` ```this is the first sentence of code in a module ``` `) is used when creating a module. 
   
   - This is a useful document [here](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/) that discusses what makes useful commenting
 
