@@ -51,7 +51,7 @@ Open Analytics Manifesto.
     - STROBE extension for variation with “user need” pre-amble
 
 - Standard environments: 
-  - Use Docker to create containised code. A github template called [custom-docker](https://github.com/ebmdatalab/custom-docker) 
+  - Use Docker to create containised code. A github template called [datalab-analysis-template](https://github.com/ebmdatalab/datalab-analysis-template) 
   has been set up here. Follow the instructions in the readme to use this repo template to make your own project repo. 
   - Document your virtual environment in the readme as a bare minimum. A `requirements.txt` is required for all projects. Where appropriate use a script to launch docker (this is set up automatically when using the custom-docker template)
 
